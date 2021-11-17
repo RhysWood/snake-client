@@ -16,14 +16,6 @@ const connect = function () {
     conn.write('Name: RHW')
   })
 
-  // conn.on('connect', () => {
-  //   setTimeout(() => {
-  //     conn.write('Move: down')
-  //   }, 1000);
-  //   // conn.write('Move: down')
-  // })
-
-  // interpret incoming data as text
   conn.setEncoding("utf8");
 
   return conn;
