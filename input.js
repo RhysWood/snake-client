@@ -1,5 +1,5 @@
 let connection;
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -31,6 +31,6 @@ const handleUserInput = (key) => {
   if (key === 'c') {
     connection.write('Say: Come here ya lil dot!');
   }
-}
+};
 
 module.exports = {setupInput, handleUserInput};
