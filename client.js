@@ -3,8 +3,8 @@ const { IP, PORT } = require("./constants");
 
 const connect = function() {
   const conn = net.createConnection({
-    host: IP,
-    port: PORT
+    host: IP, //sets the IP to local host
+    port: PORT //sets the port to the constant PORT 50541
   });
 
   conn.on('data', (data) => {
